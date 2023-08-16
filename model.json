@@ -1,0 +1,643 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "featur": {
+            "intent": "General Inquiries.Product Information",
+            "domain": "default"
+          },
+          "compat": {
+            "intent": "General Inquiries.Product Information",
+            "domain": "default"
+          },
+          "upgrad": {
+            "intent": "General Inquiries.Product Information",
+            "domain": "default"
+          },
+          "document": {
+            "intent": "General Inquiries.Product Information",
+            "domain": "default"
+          },
+          "account": {
+            "intent": "General Inquiries.FAQs",
+            "domain": "default"
+          },
+          "bill": {
+            "intent": "General Inquiries.FAQs",
+            "domain": "default"
+          },
+          "secur": {
+            "intent": "General Inquiries.FAQs",
+            "domain": "default"
+          },
+          "privaci": {
+            "intent": "General Inquiries.FAQs",
+            "domain": "default"
+          },
+          "not,printer,work": {
+            "intent": "Technical Support.Device Support",
+            "domain": "default"
+          },
+          "connect,network": {
+            "intent": "Technical Support.Device Support",
+            "domain": "default"
+          },
+          "bluetooth,pair": {
+            "intent": "Technical Support.Device Support",
+            "domain": "default"
+          },
+          "batteri,life": {
+            "intent": "Technical Support.Device Support",
+            "domain": "default"
+          },
+          "app,issu": {
+            "intent": "Technical Support.Troubleshooting",
+            "domain": "default"
+          },
+          "error,websit": {
+            "intent": "Technical Support.Troubleshooting",
+            "domain": "default"
+          },
+          "compat,devic": {
+            "intent": "Technical Support.Troubleshooting",
+            "domain": "default"
+          },
+          "perform": {
+            "intent": "Technical Support.Troubleshooting",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "General Inquiries.Product Information": "default",
+          "General Inquiries.FAQs": "default",
+          "Technical Support.Device Support": "default",
+          "Technical Support.Troubleshooting": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Features",
+            "intent": "General Inquiries.Product Information"
+          },
+          {
+            "domain": "default",
+            "utterance": "Compatibility",
+            "intent": "General Inquiries.Product Information"
+          },
+          {
+            "domain": "default",
+            "utterance": "Upgrades",
+            "intent": "General Inquiries.Product Information"
+          },
+          {
+            "domain": "default",
+            "utterance": "Documentation",
+            "intent": "General Inquiries.Product Information"
+          },
+          {
+            "domain": "default",
+            "utterance": "Account",
+            "intent": "General Inquiries.FAQs"
+          },
+          {
+            "domain": "default",
+            "utterance": "Billing",
+            "intent": "General Inquiries.FAQs"
+          },
+          {
+            "domain": "default",
+            "utterance": "Security",
+            "intent": "General Inquiries.FAQs"
+          },
+          {
+            "domain": "default",
+            "utterance": "Privacy",
+            "intent": "General Inquiries.FAQs"
+          },
+          {
+            "domain": "default",
+            "utterance": "Printer Not Working",
+            "intent": "Technical Support.Device Support"
+          },
+          {
+            "domain": "default",
+            "utterance": "Network Connection",
+            "intent": "Technical Support.Device Support"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bluetooth Pairing",
+            "intent": "Technical Support.Device Support"
+          },
+          {
+            "domain": "default",
+            "utterance": "Battery Life",
+            "intent": "Technical Support.Device Support"
+          },
+          {
+            "domain": "default",
+            "utterance": "App Issues",
+            "intent": "Technical Support.Troubleshooting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Website Errors",
+            "intent": "Technical Support.Troubleshooting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Device Compatibility",
+            "intent": "Technical Support.Troubleshooting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Performance",
+            "intent": "Technical Support.Troubleshooting"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "featur": 1,
+              "compat": 1,
+              "upgrad": 1,
+              "document": 1,
+              "account": 1,
+              "bill": 1,
+              "secur": 1,
+              "privaci": 1,
+              "printer": 1,
+              "not": 1,
+              "work": 1,
+              "network": 1,
+              "connect": 1,
+              "bluetooth": 1,
+              "pair": 1,
+              "batteri": 1,
+              "life": 1,
+              "app": 1,
+              "issu": 1,
+              "websit": 1,
+              "error": 1,
+              "devic": 1,
+              "perform": 1
+            },
+            "intents": {
+              "General Inquiries.Product Information": 1,
+              "General Inquiries.FAQs": 1,
+              "Technical Support.Device Support": 1,
+              "Technical Support.Troubleshooting": 1
+            },
+            "intentFeatures": {
+              "General Inquiries.Product Information": {
+                "featur": 1,
+                "compat": 1,
+                "upgrad": 1,
+                "document": 1
+              },
+              "General Inquiries.FAQs": {
+                "account": 1,
+                "bill": 1,
+                "secur": 1,
+                "privaci": 1
+              },
+              "Technical Support.Device Support": {
+                "printer": 1,
+                "not": 1,
+                "work": 1,
+                "network": 1,
+                "connect": 1,
+                "bluetooth": 1,
+                "pair": 1,
+                "batteri": 1,
+                "life": 1
+              },
+              "Technical Support.Troubleshooting": {
+                "app": 1,
+                "issu": 1,
+                "websit": 1,
+                "error": 1,
+                "devic": 1,
+                "compat": 1,
+                "perform": 1
+              }
+            },
+            "featuresToIntent": {
+              "featur": [
+                "General Inquiries.Product Information"
+              ],
+              "compat": [
+                "General Inquiries.Product Information",
+                "Technical Support.Troubleshooting"
+              ],
+              "upgrad": [
+                "General Inquiries.Product Information"
+              ],
+              "document": [
+                "General Inquiries.Product Information"
+              ],
+              "account": [
+                "General Inquiries.FAQs"
+              ],
+              "bill": [
+                "General Inquiries.FAQs"
+              ],
+              "secur": [
+                "General Inquiries.FAQs"
+              ],
+              "privaci": [
+                "General Inquiries.FAQs"
+              ],
+              "printer": [
+                "Technical Support.Device Support"
+              ],
+              "not": [
+                "Technical Support.Device Support"
+              ],
+              "work": [
+                "Technical Support.Device Support"
+              ],
+              "network": [
+                "Technical Support.Device Support"
+              ],
+              "connect": [
+                "Technical Support.Device Support"
+              ],
+              "bluetooth": [
+                "Technical Support.Device Support"
+              ],
+              "pair": [
+                "Technical Support.Device Support"
+              ],
+              "batteri": [
+                "Technical Support.Device Support"
+              ],
+              "life": [
+                "Technical Support.Device Support"
+              ],
+              "app": [
+                "Technical Support.Troubleshooting"
+              ],
+              "issu": [
+                "Technical Support.Troubleshooting"
+              ],
+              "websit": [
+                "Technical Support.Troubleshooting"
+              ],
+              "error": [
+                "Technical Support.Troubleshooting"
+              ],
+              "devic": [
+                "Technical Support.Troubleshooting"
+              ],
+              "perform": [
+                "Technical Support.Troubleshooting"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "featur",
+                "compat",
+                "upgrad",
+                "document",
+                "account",
+                "bill",
+                "secur",
+                "privaci",
+                "printer",
+                "not",
+                "work",
+                "network",
+                "connect",
+                "bluetooth",
+                "pair",
+                "batteri",
+                "life",
+                "app",
+                "issu",
+                "websit",
+                "error",
+                "devic",
+                "perform"
+              ],
+              "intents": [
+                "General Inquiries.Product Information",
+                "General Inquiries.FAQs",
+                "Technical Support.Device Support",
+                "Technical Support.Troubleshooting"
+              ],
+              "perceptrons": [
+                [
+                  10.220112800598145,
+                  9.660906791687012,
+                  10.186391830444336,
+                  10.186086654663086,
+                  -4.094925880432129,
+                  -4.093610763549805,
+                  -4.092206954956055,
+                  -4.090707302093506,
+                  -1.367789626121521,
+                  -1.367789626121521,
+                  -1.367789626121521,
+                  -2.0504510402679443,
+                  -2.0504510402679443,
+                  -2.050305128097534,
+                  -2.050305128097534,
+                  -2.050157308578491,
+                  -2.050157308578491,
+                  -2.0500080585479736,
+                  -2.0500080585479736,
+                  -2.0498571395874023,
+                  -2.0498571395874023,
+                  -13.455245971679688,
+                  -4.064873218536377,
+                  4.090542807902456
+                ],
+                [
+                  -4.1175217628479,
+                  -4.117514610290527,
+                  -4.116207122802734,
+                  -4.115293025970459,
+                  10.165779113769531,
+                  10.16529655456543,
+                  10.164315223693848,
+                  10.163166046142578,
+                  -1.4056358337402344,
+                  -1.4056358337402344,
+                  -1.4056358337402344,
+                  -2.0878145694732666,
+                  -2.0878145694732666,
+                  -2.0855777263641357,
+                  -2.0855777263641357,
+                  -2.0843584537506104,
+                  -2.0843584537506104,
+                  -2.0820364952087402,
+                  -2.0820364952087402,
+                  -2.0805835723876953,
+                  -2.0805835723876953,
+                  -1.2491865158081055,
+                  -4.118246078491211,
+                  4.11897689243873
+                ],
+                [
+                  -1.8586182594299316,
+                  -2.0321898460388184,
+                  -1.8376268148422241,
+                  -1.8282318115234375,
+                  -1.8219772577285767,
+                  -1.8189613819122314,
+                  -1.8181463479995728,
+                  -1.8180354833602905,
+                  4.155861854553223,
+                  4.155861854553223,
+                  4.155861854553223,
+                  6.233788967132568,
+                  6.233788967132568,
+                  6.233788013458252,
+                  6.233788013458252,
+                  6.2337870597839355,
+                  6.2337870597839355,
+                  -1.2125762701034546,
+                  -1.2125762701034546,
+                  -1.2115401029586792,
+                  -1.2115401029586792,
+                  -0.8609303832054138,
+                  -1.8777800798416138,
+                  1.818125293909558
+                ],
+                [
+                  -2.3212220668792725,
+                  -1.5512746572494507,
+                  -2.160672903060913,
+                  -2.1475324630737305,
+                  -2.136784553527832,
+                  -2.1271910667419434,
+                  -2.117870807647705,
+                  -2.1100387573242188,
+                  -0.7797852158546448,
+                  -0.7797852158546448,
+                  -0.7797852158546448,
+                  -1.1111233234405518,
+                  -1.1111233234405518,
+                  -1.1067143678665161,
+                  -1.1067143678665161,
+                  -1.104604959487915,
+                  -1.104604959487915,
+                  6.178417682647705,
+                  6.178417682647705,
+                  6.178083419799805,
+                  6.178083419799805,
+                  13.688966751098633,
+                  12.31354808807373,
+                  1.9296244548422028
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Features"
+      ],
+      [
+        "en",
+        "Compatibility"
+      ],
+      [
+        "en",
+        "Upgrades"
+      ],
+      [
+        "en",
+        "Documentation"
+      ],
+      [
+        "en",
+        "Account"
+      ],
+      [
+        "en",
+        "Billing"
+      ],
+      [
+        "en",
+        "Security"
+      ],
+      [
+        "en",
+        "Privacy"
+      ],
+      [
+        "en",
+        "Printer Not Working"
+      ],
+      [
+        "en",
+        "Network Connection"
+      ],
+      [
+        "en",
+        "Bluetooth Pairing"
+      ],
+      [
+        "en",
+        "Battery Life"
+      ],
+      [
+        "en",
+        "App Issues"
+      ],
+      [
+        "en",
+        "Website Errors"
+      ],
+      [
+        "en",
+        "Device Compatibility"
+      ],
+      [
+        "en",
+        "Performance"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "General Inquiries.Product Information": [
+          {
+            "answer": "Discover a range of features including A, B, and C. For a detailed list or specific questions, feel free to inquire."
+          },
+          {
+            "answer": "Our product works on platforms X, Y, and Z. For compatibility concerns, share more details to assist you better."
+          },
+          {
+            "answer": "We offer regular updates for enhanced functionality. Check our release notes or inquire about the latest upgrades."
+          },
+          {
+            "answer": "Access user guides, tutorials, and documentation on our website. Need help navigating it?"
+          }
+        ],
+        "General Inquiries.FAQs": [
+          {
+            "answer": "For account-related queries, you can manage your account settings by logging into your profile. If you need more assistance, please ask."
+          },
+          {
+            "answer": "To view billing details or make payments, visit the 'Billing' section of your account dashboard. For specific concerns, feel free to ask."
+          },
+          {
+            "answer": "Your security is important. We use encryption and two-factor authentication to safeguard your account. Need more info?"
+          },
+          {
+            "answer": "Rest assured, we prioritize your privacy. Check our Privacy Policy for details or ask any privacy-related questions."
+          }
+        ],
+        "Technical Support.Device Support": [
+          {
+            "answer": "Printer issues can be frustrating. Check for paper jams, connectivity, and update drivers. Let's troubleshoot together."
+          },
+          {
+            "answer": "Network problems? Start by rebooting your router. If that doesn't help, we'll proceed with troubleshooting."
+          },
+          {
+            "answer": "Having trouble pairing Bluetooth devices? Ensure they're discoverable and follow our pairing guide."
+          },
+          {
+            "answer": "To improve battery life, adjust settings and reduce background usage. Need more tips?"
+          }
+        ],
+        "Technical Support.Troubleshooting": [
+          {
+            "answer": "Experiencing app problems? Start by restarting the app. If that doesn't work, let's explore further solutions."
+          },
+          {
+            "answer": "Facing website errors? Clear your browser cache and cookies. If the issue persists, we'll troubleshoot together."
+          },
+          {
+            "answer": "Our product is compatible with a wide range of devices. If you're facing compatibility issues, provide more details for assistance."
+          },
+          {
+            "answer": "For slow performance, try closing background apps. If the problem persists, we'll work together to optimize performance."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

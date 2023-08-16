@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"chatbot-nlpjs","dependencies":{"express":{"version":"4.18.2"},"mysql":{"version":"2.18.1"},"mysql2":{"version":"3.6.0"},"node-nlp":{"version":"4.27.0"},"sequelize":{"version":"6.32.1"}}}
